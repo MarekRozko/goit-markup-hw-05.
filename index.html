@@ -18,9 +18,18 @@
                         <nav class="site-nav">
                             <a class="logo" href="./index.html"><span class="logo-color">Web</span>Studio</a>
                             <ul class="nav-list list">
-                                <li class="nav-item"><a class="curren-link" href="./index.html">Студия</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                                <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+                                <li class="nav-item">
+                                            <a class="curren-link" href="./index.html">Студия</a>
+                                            <div class="nav-sprit list"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./portfolio.html">Портфолио</a>
+                                    <div class="nav-sprit list"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Контакты</a>
+                                    <div class="nav-sprit list"></div>
+                                </li>
                             </ul>
                         </nav>
                         <ul class="contact-list list">
@@ -53,7 +62,16 @@
                 <section class="hero overlay"> 
                     <div class="container">
                         <h1 class="hero-title list">Эффективные решения для вашего бизнеса</h1>
-                        <button class="button-studio" type="button">Заказать услугу</button>
+                        <button data-modal-open class="button-studio" type="button">Заказать услугу</button>
+                        <div class="backdrop is-hidden" data-modal>
+                            <div  class="modal">
+                                <button data-modal-close class="button-close" type="button">
+                                    <svg class="button-models" width=11px, height=11px>
+                                        <use href="images/sprite-original.svg#icon-cross"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </section>
                     
@@ -107,11 +125,25 @@
                 <div class="container">
                     <h2 class="work list">Чем мы занимаемся</h2>
                     <ul class="work-list list">
-                        <li class="work-item"><img class="work-img" src="./images/work-company1.jpeg"
-                                alt="Пользуются новейшими технологиями" width="370"></li>
-                        <li class="work-item"><img class="work-img" src="./images/work-company2.jpeg" alt="Большая клиенская база"
-                                width="370"></li>
-                        <li class="work-item"><img class="work-img" src="./images/work-company3.jpeg" alt="Лучшая графика" width="370"></li>
+                        <li class="work-item">              
+                             <img class="work-img" src="./images/work-company1.jpeg" alt="Пользуются новейшими технологиями" width="370">
+                            <div>
+                                <p class="work-text list">Десктопные приложения</p>
+                            </div>       
+                        </li>
+                                
+                        <li class="work-item">
+                            <img class="work-img" src="./images/work-company2.jpeg" alt="Большая клиенская база" width="370">
+                            <div>
+                                <p class="work-text list">Мобильные приложения</p>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <img class="work-img" src="./images/work-company3.jpeg" alt="Лучшая графика" width="370">
+                            <div>
+                                <p class="work-text list">Дизайнерские решения</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -373,5 +405,6 @@
                 </div>
             </div>
         </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
