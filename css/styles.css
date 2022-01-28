@@ -197,6 +197,110 @@ a.contact-link-icon:focus {
   border-radius: 50%;
   background-color: var(--primary-bg-color);
   cursor: pointer;
+  color: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-close:hover .button-modals,
+.button-close:focus .button-modals {
+  fill: #2196f3;
+}
+.buttons-submit {
+  padding: 10px 55px 10px 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+textarea {
+  resize: none;
+}
+.text-politics {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 30px;
+}
+.link-modal {
+  color: var(--accent-color);
+}
+.form {
+  width: 528px;
+  padding: 40px;
+  margin: 0;
+}
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.icon-form {
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border: none;
+}
+.icon-name {
+  position: absolute;
+  width: 12px;
+  color: currentColor;
+  bottom: 18px;
+  left: 15px;
+}
+
+.form-field label {
+  display: flex;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.form-field input {
+  height: 40px;
+  display: flex;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-feedback label {
+  display: flex;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.form-feedback textarea {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-feedback textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-policy {
+  margin-bottom: 30px;
+}
+.buttons-submit:hover,
+.buttons-submit:focus {
+  background-color: #188ce8;
 }
 .is-hidden {
   opacity: 0;
@@ -220,10 +324,18 @@ a.contact-link-icon:focus {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  /* padding: 40px 40px; */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primary-bg-color);
+}
+.text-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #212121;
+  margin-bottom: 12px;
 }
 .hero {
   text-align: center;
@@ -557,6 +669,65 @@ a.team-link:focus {
 .addres-list {
   display: flex;
   align-items: baseline;
+}
+/* subscribe */
+.mailing-list {
+  margin-left: 93px;
+}
+.subscribe-label {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mailing-list input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  cursor: pointer;
+}
+.mailing-list ::placeholder {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.buttons-mailing {
+  margin-left: 10px;
+  padding: 10px 62px 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.icon-send {
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+}
+.buttons-mailing:hover,
+.buttons-mailing:focus {
+  background-color: #188ce8;
+}
+.mailing-list input :hover,
+.mailing-list input :focus {
+  color: #2196f3;
 }
 
 /* Portfolio */
